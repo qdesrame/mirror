@@ -61,7 +61,7 @@ func RequestMux(mainTarget *httputil.ReverseProxy, shadowTarget *httputil.Revers
 				respMain := NewResponse(respMainRecorder)
 				resShadow := NewResponse(respShadowRecorder)
 
-				diff, err := ResponseDiff(respMain, resShadow)
+				diff, err := ResponseDiff{}.Compare(respMain, resShadow)
 				if err != nil {
 					slog.Error("response diff", "error", err)
 				}
