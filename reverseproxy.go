@@ -1,4 +1,4 @@
-package handler
+package mirror
 
 import (
 	"go.opentelemetry.io/otel"

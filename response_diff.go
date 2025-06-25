@@ -1,4 +1,4 @@
-package handler
+package mirror
 
 import (
 	"log/slog"
